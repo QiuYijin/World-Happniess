@@ -236,3 +236,10 @@ ggplot(data = happy,mapping = aes(x=`Social support`,y=`Ladder score`,group=Afri
 ```
 
 Figure \ref{fig:Africa} shows that most non-African countries have higher Ladder scores than African countries, also non-African countries have higher social support and freedom to make life choice.
+
+
+#Check assumption
+
+
+
+
