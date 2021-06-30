@@ -239,7 +239,16 @@ Figure \ref{fig:Africa} shows that most non-African countries have higher Ladder
 
 
 #Check assumption
+```{r}
+regression.points <- get_regression_points(Afr.model)
+regression.points
 
+ggplot(regression.points, aes(x = `Ladder score`, y = residual)) +
+  geom_point() +
+  labs(x = "Ladder score", y = "Residual") +
+  geom_hline(yintercept = 0, col = "blue", size = 1) +
+  facet_wrap(~ African)
 
+```
 
 
